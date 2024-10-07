@@ -1,2 +1,5 @@
-a = '복사 확인용 코드'
-b = a
+import random
+
+while True:
+    if random.random() <= 0:
+        break
