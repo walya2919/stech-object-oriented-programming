@@ -58,18 +58,18 @@ def sign(num : float):
 def guess_find_point(f, st_point, end_point):
     x = st_point + 1
     pre_fx = sign(f(st_point))
-    find_points = list()
+    find_points = set()
 
     while x <= end_point:
         fx = sign(f(x))
         
-        if pre_fx == 0 | pre_fx != fx:
-            find_points.append(min(x, x-1, key = lambda x : math.fabs(f(x))))
+        if pre_fx != fx:
+            find_points.add(min(x, x-1, key = lambda x : math.fabs(f(x))))
         
         pre_fx = fx
         x += 1
     
-    return find_points
+    return list(find_points)
 
 def newton_method(f, st_point):
     eps = 0.000000001
