@@ -4,7 +4,7 @@ from lib.player import Seojin24102406
 
 def main():
     players = [Seojin24102406(MONEY["SEED"])]
-    game = Game(players, rounds=100000)
+    game = Game(players, rounds=100)
     game.play()
 
 if __name__ == '__main__':
