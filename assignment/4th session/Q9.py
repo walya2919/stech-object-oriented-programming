@@ -1,5 +1,8 @@
 try:
     f =  open("alkaline_metals.txt", "r")
+
+# 제 인터프리터가 "alkaline_metals.txt"를 생성하는 위치가 4th session파일 내부가 아니여서
+# 추가로 파일을 생성하는 코드를 추가하였습니다.
 except:
     f = open("alkaline_metals.txt", "w")
     f.write(

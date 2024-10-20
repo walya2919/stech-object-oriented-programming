@@ -2,7 +2,7 @@ from lib.card import Deck
 from lib.player import Dealer, ACTIONS
 
 
-MONEY = {"PLAY": 5, "REWARD": 5, "SEED": 1000, "CASINO": 1000000}
+MONEY = {"PLAY": 0, "REWARD": 1, "SEED": 1000, "CASINO": 1000000}
 STATES = {"READY": 0, "PLAY": 1}
 
 
@@ -38,8 +38,7 @@ class Game:
             print(f"Round {n + 1} / {self.rounds} start: ")
 
             states, visible_states = self.init_round()
-            self.play_round(states, visible_states)
-
+            self.play_round(states, visible_states) 
         print("---------------------------------------------------------")
         self.print_game_result()
 
