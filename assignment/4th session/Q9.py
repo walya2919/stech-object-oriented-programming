@@ -20,4 +20,6 @@ alkaline_metals = list()
 for line in f.readlines():
     alkaline_metals.append(line.split())
 
+f.close()
+
 print(alkaline_metals)

@@ -14,7 +14,13 @@ ids.insert(idx + 1, 4499)
 print(ids)
 
 # D
-ids = ids + [5566, 1830]
+# ids = ids + [5566, 1830]
+
+# ids.append(5566)
+# ids.append(1830)
+
+ids = ids.__add__([5566, 1830])
+
 print(ids)
 
 # E
