@@ -1,6 +1,6 @@
 print("A: ",end="")
 try:
-    6 * ----------8
+    exec("6 * ----------8")
     print("6 * ----------8 dosn't make SyntaxError")
 except SyntaxError:
     pass
@@ -23,7 +23,7 @@ except:
 
 print("C: ",end="")
 try:
-    ((((4 ** 3))))
+    exec("((((4 ** 3))))")
     print("((((4 ** 3)))) dosn't make SyntaxError")
 except SyntaxError:
     pass
@@ -34,7 +34,7 @@ except:
 
 print("D: ",end="")
 try:
-    (-(-(-(-5))))
+    exec("(-(-(-(-5))))")
     print("(-(-(-(-5)))) dosn't make SyntaxError")
 except SyntaxError:
     pass
