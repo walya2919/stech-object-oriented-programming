@@ -8,6 +8,11 @@ class Block:
         new_shape = [[self.shape[r][c] for r in range(row-1, -1, -1)] for c in range(col)]
         self.shape = new_shape
     
+    def rotate_anticlockwise(self):
+        self.rotate_clockwise()
+        self.rotate_clockwise()
+        self.rotate_clockwise()
+
     def print_shape(self):
         for line in self.shape:
             print(line)
